@@ -1,0 +1,285 @@
+/* Estilos gerais */
+
+* {
+	box-sizing: border-box;
+	margin: 0 0 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+  	flex-direction: column;
+  	min-height: 100vh;
+}
+
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 2rem;
+	
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 0.1rem;
+	margin-top: 0;
+	text-align: center;
+   
+    
+}
+
+.h2 {
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+
+.palco {
+  	position: fixed;
+  	top: 70%;
+  	right:  0;  
+  	transform: rotate(90deg);
+
+}
+
+.barraca central {
+	position: absolute;
+  	top: 50%;
+  	left: 0;
+  	transform: translateY(-50%);
+	transform: rotate(90deg);
+
+}
+
+p {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+}
+
+button {
+	background-color: #229ff2;
+	color: #fff;
+	font-size: 1rem;	
+	padding: 0.8rem 1.9rem;
+	margin: 0.09rem;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+    justify-content: center;
+	flex-basis: calc(20% - 1.2rem);
+	
+
+}
+
+button:hover {
+	background-color: #d43f08;
+	
+    
+}
+
+/* Estilos da página inicial */
+
+.inicial {
+	text-align: center;
+
+}
+
+#banner {
+	background-image: url('https://example.com/quermesse.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#banner h1 {
+	color: #aa2424;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+#banner button {
+	font-size: 1.5rem;
+}
+.buttoninicio {
+    background-color: #229ff2;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.8rem 1.9rem;
+    margin: 20%;
+	margin-left: 40%;
+	margin-top: 10%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    flex-basis: calc(20% - 1.2rem);
+	width: 20%;
+  
+  }
+
+  .buttoninicio:hover {
+    background-color: #d43f08;
+      
+  }
+/* Estilos da página de reserva */
+
+.mesas {
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+	justify-content: center;
+	
+    
+	
+    
+}
+
+.quadrante1{
+	display: inline-block;
+    flex-direction: column;
+	align-items: center;
+	margin-bottom: 0rem;
+	margin: 6rem;
+	margin-top: 0.1rem;
+	margin-left: 5rem;
+    gap: 0px;
+	width: 31%;
+	
+
+}
+
+.quadrante2 {
+	display: inline-block;
+    flex-direction: column;
+	align-items: center;
+	margin-bottom: 2rem;
+	margin: 3rem;
+    gap: 0px;
+	width: 31%;
+	
+}
+
+.quadrante3 {
+	display: inline-block;
+    flex-direction: column;
+	align-items: center;
+	margin-bottom: 2rem;
+	margin-right: 0.1rem;
+	margin-top: 0.1;
+	margin-left: 0.1rem;
+    gap: 0px;	
+	font-size: 0,2rem;
+	padding: 1rem 1.2rem;
+	margin: 3rem;
+	width: 37%;
+	
+
+
+}
+.quadrante4 {
+	display: inline-block;
+    flex-direction: column;
+	align-items: center;
+	margin-bottom: 0.1rem;
+	margin-right: 0.1rem;
+	margin-top: 0.1;
+	margin-left: 0.1rem;
+    gap: 0px;	
+	font-size: 0,2rem;
+	padding: 1rem 1.2rem;
+	margin: 3rem;
+	width: 37%;
+}
+
+
+
+.mesa button {
+    width: 1%;
+    padding: 1%;
+    border: 1px solid #000; /* Adiciona um contorno preto de 1px */
+    border-radius: 1px;
+    font-size: 1px;
+    background-color: #fff;
+    color: rgb(255, 81, 0); /* Altera a cor do texto para vermelho */
+    cursor: pointer;
+  }
+  
+  .mesa .num {
+    flex-direction: row-reverse; /* Altera a direção do flex para row */
+  }
+
+  .mesa .num span {
+    margin-right: 1px;
+  }
+
+ 
+/* Estilos da página de confirmação */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form input[type="text"],
+  form input[type="tel"],
+  form input[type="submit"] {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: color;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 50%;
+  }
+  
+  form input[type="submit"] {
+    background-color: #f26522;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #f26522;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .submit:hover {
+    background-color: #d43f08;
+      
+  }

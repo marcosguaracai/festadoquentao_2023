@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Confirmação de Reserva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Confirmação de Reserva</h1>
+	<form>
+		<label for="nome">Nome:</label>
+		<input type="text" id="nome" name="nome"><br>
+
+		<label for="telefone">Telefone:</label>
+		<input type="text" id="telefone" name="telefone"><br>
+
+		
+
+		<input class="submit" type="submit" value="Confirmar Reserva">
+		<button class="buttonconfirmacao" onclick="window.location.href='inicial.html'">Início</button>
+	</form>
+
+	
+
+	<p id="mensagem"></p>
+
+	<script>
+		const form = document.querySelector('form');
+		const mensagem = document.getElementById('mensagem');
+
+		form.addEventListener('submit', (event) => {
+			event.preventDefault();
+			mensagem.textContent = "Sua reserva foi confirmada com sucesso!";
+		});
+	</script>
+</body>
+</html>
